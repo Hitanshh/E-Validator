@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Marhey:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: "Honk", system-ui; */
+    font-family: "Marhey", sans;
+}
+
+/* Nav Bar */
+
+header{
+    background-color: #141b23;
+    color: white;
+    padding: 1rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: "Honk", system-ui;
+    font-size: 30px;
+    /* text-decoration: underline; */
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    padding: 0px 6px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar>ul>li>a:hover{
+    color: rgb(188, 187, 218);
+}
+
+/* Container */
+
+body{
+    height: 200vh;
+}
+.container{
+    height: 100%;
+    background-color: #37475A;
+}
+.container1{
+    position: absolute;
+    background-color: rgb(95, 105, 139);
+    padding: 3rem;
+    margin: 2rem;
+    font-size: 1rem;
+
+}
+.btn{
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    font-size: 10px;
+    padding: 10px 15px;
+    font-family: Arial;
+}
+#username{
+    padding: 2px 18px;
+    width: 16vw;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium';
+    padding-bottom: 20px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium';
+    padding-bottom: 20px;
+}
+#resultValid div::first-letter{
+    text-transform: uppercase;
+}
+#resultValid div{
+    font-family: 'Courier New';
+    padding: 5px;
+}
+
+/* Footer  */
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+@media only screen and (max-width:600px) {
+    body{
+        height: 100vh;
+    }
+    .container{
+        height: 88vh;
+    }
+    .container1{
+        font-size: 11px;
+        position: absolute;
+        background-color: rgb(95, 105, 139);
+        padding: 1rem;
+        margin: 1rem;
+        /* font-size: 1rem; */
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    header{
+        padding: 6px;
+    }
+    #username{
+        padding: 2px 18px;
+        width: 40vw;
+    }
+}
